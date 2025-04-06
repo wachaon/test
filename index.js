@@ -1,3 +1,7 @@
+/** util.inspect のラッパー関数
+ * @param {any} data
+ * @returns {string}
+ */
 function inspect(data) {
     return require("util").inspect(data, {
         depth: null,
@@ -6,6 +10,11 @@ function inspect(data) {
     })
 }
 
+/** テスト関数
+ * @param {string} message
+ * @param {any} expected
+ * @param {any} actual
+ */
 function test(message, expected, actual) {
     if (equals(expected, actual)) {
         console.log(`✔  ${message}`)
@@ -16,6 +25,11 @@ function test(message, expected, actual) {
     }
 }
 
+/** オブジェクトの比較関数
+ * @param {any} expected - 期待値
+ * @param {any} actual - 実際の値
+ * @returns  {boolean}
+ */
 function equals(expected, actual) {
     if (expected === actual) return true
     if (typeof expected !== typeof actual) return false
