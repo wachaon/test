@@ -1,0 +1,22 @@
+{
+    "name": "test",
+    "version": "0.0.1",
+    "description": "test",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wachaon/test.git"
+    },
+    "keywords": [
+        "test"
+    ],
+    "author": "wachaon",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wachaon/test/issues"
+    },
+    "homepage": "https://github.com/wachaon/test#readme"
+}
